@@ -2,6 +2,7 @@ const path =require('path');
 const express = require('express');
 const hbs = require('hbs');
 const port = 3000;
+const herokuPort = process.env.PORT ||3000;
 const getCode = require('./utils/geoCode');
 const forecast = require('./utils/forecast');
 
@@ -99,5 +100,5 @@ app.get('*',(req,res)=>{
     res.render('Error');
 })
 
-app.listen(port, ()=>console.log(`Example port listening at https://localhost:${port}`));
+app.listen(herokuPort, ()=>console.log(`Example port listening at https://localhost:${herokuPort}`));
 
