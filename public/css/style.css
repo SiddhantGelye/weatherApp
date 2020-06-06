@@ -8,6 +8,14 @@ body {
   min-height: 100vh;
   position: relative; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 .navbar {
   max-width: 1140px;
   margin: 0 auto; }
@@ -45,7 +53,12 @@ form {
 .author {
   max-width: 1140px;
   margin: 0 auto;
-  color: red; }
+  color: #4d4d4d;
+  animation: fadeIn 1s; }
+
+.weather {
+  animation-name: fadeIn;
+  animation-duration: 2s; }
 
 .main-content {
   max-width: 1140px;

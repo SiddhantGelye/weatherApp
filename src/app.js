@@ -60,13 +60,17 @@ app.get('/weather', (req,res)=>{
                         })
                     }
                     else{
-                        const {temperature,feelslike} = d;
+                        const {temperature,feelslike, cloudcover, is_day,humidity} = d;
                         return res.send({
                             latitude:latitude,
                             longitude:longitude,
                             temperature:temperature,
                             location:location,
-                            feelslike:feelslike
+                            feelslike:feelslike,
+                            daystatus:is_day,
+                            cloudcover,cloudcover,
+                            humidity:humidity
+                            
                         })
                         // console.log(`longitude=${longitude} latitude =${latitude}`)
                         // console.log(`${d.weather_descriptions[0]} here  is ${d.temperature } deg C outside  and feels like ${d.feelslike} deg C in ${location} `);

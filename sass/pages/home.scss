@@ -1,6 +1,10 @@
-
 .author{
     max-width: 1140px;
     margin: 0 auto;
-    color: red;
+    color: rgb(77, 77, 77);
+    animation:fadeIn 1s;
+}
+.weather{
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
