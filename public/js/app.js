@@ -1,6 +1,3 @@
-
-console.log('client side js has been loaded');
-
 const weatherForm = document.querySelector('form')
 const address  = document.querySelector('.input_value');
 const url = ''
