@@ -47,6 +47,16 @@ form {
   margin: 0 auto;
   color: red; }
 
-.city {
-  width: 100px;
-  height: 100px; }
+.main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+  .main-content img {
+    width: 70%;
+    height: 400px; }
+  .main-content .myself {
+    padding-left: 30%;
+    width: 50%; }
+  .main-content .credits {
+    text-align: left; }

@@ -1,4 +1,18 @@
-.city{
-    width: 100px;
-    height: 100px;
+.main-content{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    img{
+        width: 70%;
+        height:400px;   
+    }
+    .myself{
+        padding-left: 30%;
+        width: 50%;
+    }
+    .credits{
+        text-align: left;
+    }
+    
 }
